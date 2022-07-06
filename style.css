@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans';
+/* border: 1px solid orange; */
+}
+/* LOGO section */
+nav{
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+    /* border: 2px solid black; */
+    width: 40%;
+}
+
+.logo-text{
+  color: #181E50;
+  font-weight: bold;
+  font-size: 1.01rem; 
+}
+
+.initial-N,.initial-G{
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+.initial-N{
+  margin-left: 2.3em;
+}
+
+.initial-G{
+  margin-left: -0.15em;
+  color: #002DA0;
+}
+/* End of logo section */
+
+
+/* Navbar hyperlinks */
+.navbar-section{
+    width: 60%;
+}
+
+.nav-list{
+    position:relative;
+    top: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-hyperlinks{
+    display: flex;
+    width: 60%;
+   justify-content: space-around;
+}
+
+.contact-section{
+width: 20%;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 4px 10px;
+    color: black;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-box{
+     border:1px solid black;
+     text-align: center;
+     border-radius: 42px;
+}
+
+/* End of hyperlinks */
