@@ -5,11 +5,13 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Open Sans'; 
-/* border: 1px solid orange; */
+border: 1px solid orange;
 }
 /* LOGO section */
 nav{
   display: flex;
+  position:sticky;
+  top:0px;
   padding: 1em;
   justify-content: center;
   align-items: center;
@@ -100,8 +102,41 @@ width: 20%;
     
     /* completion-services section */
        .completion-services{
+         width: 100%;
          display: flex;
          justify-content: space-between;
+         /* border: 1px solid cyan; */
+        
+       }
+
+       .service-details{
+        padding: 2em 0em;
+       }
+
+       .emoji{
+         display:flex;
+         justify-content: center;
+       }
+
+       .sad{
+              position: relative;
+              top: -13px;
+       }
+
+       .service-title{
+         font-size: 1.5rem;
+         text-align: center;
+         font-weight: 400;
+       }
+
+       .services-accuracy p{
+          margin: 3px;
+          display: flex;
+          justify-content: space-between;
+       }
+
+       .services-accuracy p .service-title{
+          margin-right: 5px;
        }
     /*End completion-services section */
     
