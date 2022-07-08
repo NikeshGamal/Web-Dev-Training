@@ -5,7 +5,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Open Sans'; 
-border: 1px solid orange;
+/* border: 1px solid orange; */
 }
 /* LOGO section */
 nav{
@@ -110,7 +110,9 @@ width: 20%;
        }
 
        .service-details{
-        padding: 2em 0em;
+        border-radius: 25px;
+         background-color: #F8A0F0;
+        padding: 1.5em 0.5em;
        }
 
        .emoji{
@@ -129,13 +131,19 @@ width: 20%;
          font-weight: 400;
        }
 
+       .services-accuracy{
+         
+       }
+
        .services-accuracy p{
+         color: white;
           margin: 3px;
           display: flex;
           justify-content: space-between;
        }
 
-       .services-accuracy p .service-title{
+       .services-accuracy .service-title{
+         text-align: center;
           margin-right: 5px;
        }
     /*End completion-services section */
