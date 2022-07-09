@@ -13,6 +13,8 @@ box-sizing: border-box;
 font-family: 'Open Sans'; 
 /* border: 1px solid orange; */
 }
+
+
 /* LOGO section */
 nav{
   display: flex;
@@ -21,6 +23,8 @@ nav{
   padding: 1em;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+  background-color: #FFF;
 }
 
 .logo{
@@ -92,7 +96,7 @@ width: 20%;
 /* End of hyperlinks */
 .body-container{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    font-family: 'Open Sans';
 }
 /* body-container */
@@ -100,6 +104,7 @@ width: 20%;
     /* services-container section*/
        .services-container{
          display: flex;
+         min-width: 60%;
          flex-direction: column;
          padding: 4.7em 3.5em;
        }
@@ -151,6 +156,8 @@ width: 20%;
     
     /* CV Section */
     .cv-section{
+      display: flex;
+      flex-direction: column;
       width: 70%;
      margin-top: 4em;
      padding: 0.5em 2em;
@@ -165,14 +172,14 @@ width: 20%;
     .service-text{
       color: var(--btn-color)
     }
-     .description{
-       width: 500px;
+     .description{ 
      font-size: 0.9rem;
      margin: 1em 0.6em;
     }
 
     .btn{
-      padding: 9px 22px;
+      width: 55%;
+      padding: 0.8em 0.6em;
       background-color: var(--btn-color);
       color: var(--whilte-text);
       font-weight: 500;
@@ -185,17 +192,22 @@ width: 20%;
 
     /* Intro Section */
      .intro{
+      position: relative;
        padding: 13.6em 2em;
        /* border: 1px solid black; */
-       width: 50%;
+       min-width: 40%;
        height: 100%;
       background: url("http://127.0.0.1:5500/images/man.png") no-repeat top center;
-       background-size: 57% auto;
+       background-size:contain;
        font-family: 'Open Sans';
      } 
      .introduction{
-     margin: 3.7em 0em 0em -105px ;
-     }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3.7em 0em 0em -4em;
+      padding-top: 2em 0 0 0;
+      }
 
      .introduction p{ 
        margin: 9px 0px;
@@ -224,7 +236,68 @@ width: 20%;
       border-radius: 8px;
       text-align: center;
       position: realtive;
-      margin: 0px 39%;
      }
     /* End of Intro Section */
 /* End of body container */
+@media (min-width: 620px) and (max-width: 910px) {
+ *{
+  font-size: 14px;
+ }
+  .contact-section{
+    width: 27%;
+    }    
+
+    .body-container{
+        flex-direction: column;
+    }
+
+    .services-container{
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      padding: 4.7em 3.5em;
+    }
+
+    .introduction{
+      margin: 0em;
+      padding-top:4.5em;
+      margin-left: -3.5em;
+      }
+
+    .intro{
+      width: 100%;
+    } 
+}
+
+
+@media screen and (max-width: 620px) {
+  *{
+    font-size: 12.5px;
+    /* border: 1px solid black; */
+   }
+  
+  .contact-section{
+      width: 27%;
+      }    
+  
+      .body-container{
+          flex-direction: column;
+      }
+  
+      .services-container{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 4.7em 3.5em;
+      }
+  
+      .introduction{
+        margin: 0em;
+        padding-top:4.5em;
+        margin-left: -3.5em;
+        }
+  
+      .intro{
+        width: 100%;
+      } 
+}
